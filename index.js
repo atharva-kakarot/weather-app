@@ -68,37 +68,37 @@ function searchLocation() {
 
 			currentWeatherDetails.innerHTML =
 				`<table id="weather-details-table">
-			 <tr>
+				<tr>
 			    <td>Weather:</td>
-			    <td><img src="images/cloudy.png" class = "icons"> ${data["weather"][0]["main"]}</td>
+			    <td><div class="time-div-container-one"><img src="images/cloudy.png" class = "icons">&nbsp;<div class="time-div">${data["weather"][0]["main"]}</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Humidty:</td>
-			    <td><img src="images/humidity.png" class = "icons"> ${data["main"]["humidity"]}%</td>
+			    <td><div class="time-div-container-one"><img src="images/humidity.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["humidity"]}%</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Visibility:</td>
-			    <td><img src="images/visibility.png" class = "icons"> ${data["visibility"]}m</td>
+			    <td><div class="time-div-container-one"><img src="images/visibility.png" class = "icons">&nbsp;<div class="time-div">${data["visibility"]}m</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Pressure:</td>
-			    <td><img src="images/barometer.png" class = "icons"> ${data["main"]["pressure"]}hPa</td>
+			    <td><div class="time-div-container-one"><img src="images/barometer.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["pressure"]}hPa</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Max):</td>
-			    <td><img src="images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_max"] - kelvin)}°C</td>
+			    <td><div class="time-div-container-one"><img src="images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_max"] - kelvin)}°C</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Min):</td>
-			    <td><img src="images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_min"] - kelvin)}°C</td>
+			    <td><div class="time-div-container-one"><img src="images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_min"] - kelvin)}°C</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Wind Speed:</td>
-			    <td><img src="images/wind.png" class = "icons"> ${data["wind"]["speed"]}m/s</td>
+			    <td><div class="time-div-container-one"><img src="images/wind.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["speed"]}m/s</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Wind Degree:</td>
-			    <td><img src="images/navigation.png" class = "icons"> ${data["wind"]["deg"]}°</td>
+			    <td><div class="time-div-container-one"><img src="images/navigation.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["deg"]}°</div></div></td>
 			 </tr>
 			</table>`;
 
