@@ -37,32 +37,32 @@ function searchLocation() {
 
 			if (temp >= 0 && temp <= 10) {
 				document.body.style.backgroundColor = "#010038";
-				weatherImg.src = "/images/freezing.png";
+				weatherImg.src = "images/freezing.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 10 && temp <= 20) {
 				document.body.style.backgroundColor = "darkblue";
-				weatherImg.src = "/images/cold.png";
+				weatherImg.src = "images/cold.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 20 && temp <= 30) {
 				document.body.style.backgroundColor = "green";
-				weatherImg.src = "/images/temperature.png";
+				weatherImg.src = "images/temperature.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 30 && temp <= 35) {
 				document.body.style.backgroundColor = "gold";
-				weatherImg.src = "/images/sunny.png";
+				weatherImg.src = "images/sunny.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 35 && temp <= 40) {
 				document.body.style.backgroundColor = "orange";
-				weatherImg.src = "/images/hot.png";
+				weatherImg.src = "images/hot.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 40) {
 				document.body.style.backgroundColor = "red";
-				weatherImg.src = "/images/hot1.png";
+				weatherImg.src = "images/hot1.png";
 				document.body.style.transition = "1s";
 			}
 
@@ -70,35 +70,35 @@ function searchLocation() {
 				`<table id="weather-details-table">
 			 <tr>
 			    <td>Weather:</td>
-			    <td><img src="/images/cloudy.png" class = "icons"> ${data["weather"][0]["main"]}</td>
+			    <td><img src="images/cloudy.png" class = "icons"> ${data["weather"][0]["main"]}</td>
 			 </tr>
 			 <tr>
 			    <td>Humidty:</td>
-			    <td><img src="/images/humidity.png" class = "icons"> ${data["main"]["humidity"]}%</td>
+			    <td><img src="images/humidity.png" class = "icons"> ${data["main"]["humidity"]}%</td>
 			 </tr>
 			 <tr>
 			    <td>Visibility:</td>
-			    <td><img src="/images/visibility.png" class = "icons"> ${data["visibility"]}m</td>
+			    <td><img src="images/visibility.png" class = "icons"> ${data["visibility"]}m</td>
 			 </tr>
 			 <tr>
 			    <td>Pressure:</td>
-			    <td><img src="/images/barometer.png" class = "icons"> ${data["main"]["pressure"]}hPa</td>
+			    <td><img src="images/barometer.png" class = "icons"> ${data["main"]["pressure"]}hPa</td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Max):</td>
-			    <td><img src="/images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_max"] - kelvin)}°C</td>
+			    <td><img src="images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_max"] - kelvin)}°C</td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Min):</td>
-			    <td><img src="/images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_min"] - kelvin)}°C</td>
+			    <td><img src="images/thermometer.png" class = "icons"> ${Math.floor(data["main"]["temp_min"] - kelvin)}°C</td>
 			 </tr>
 			 <tr>
 			    <td>Wind Speed:</td>
-			    <td><img src="/images/wind.png" class = "icons"> ${data["wind"]["speed"]}m/s</td>
+			    <td><img src="images/wind.png" class = "icons"> ${data["wind"]["speed"]}m/s</td>
 			 </tr>
 			 <tr>
 			    <td>Wind Degree:</td>
-			    <td><img src="/images/navigation.png" class = "icons"> ${data["wind"]["deg"]}°</td>
+			    <td><img src="images/navigation.png" class = "icons"> ${data["wind"]["deg"]}°</td>
 			 </tr>
 			</table>`;
 
@@ -117,23 +117,23 @@ function searchLocation() {
 			<table id="city-details-table">
 			<tr>
 			<td>Latitude:</td>
-			<td><div class="time-div-container"><img src="/images/latitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lat"]}°</div></div></td>
+			<td><div class="time-div-container"><img src="images/latitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lat"]}°</div></div></td>
 			</tr>
 			<tr>
 			<td>Longitude:</td>
-			<td><div class="time-div-container"><img src="/images/longitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lon"]}°</div></div></td>
+			<td><div class="time-div-container"><img src="images/longitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lon"]}°</div></div></td>
 			</tr>
 			<tr>
 			<td>Time Zone:</td>
-			<td><div class="time-div-container"><img src="/images/time-zone.png" class = "icons">&nbsp;<div class="time-div">${time}</div></div></td>
+			<td><div class="time-div-container"><img src="images/time-zone.png" class = "icons">&nbsp;<div class="time-div">${time}</div></div></td>
 			</tr>
 			<tr>
 			<td>Sunrise:</td>
-			<td><div class="time-div-container"><img src="/images/sunrise.png" class = "icons">&nbsp;<div class="time-div">${sunriseTime}</div></div></td>
+			<td><div class="time-div-container"><img src="images/sunrise.png" class = "icons">&nbsp;<div class="time-div">${sunriseTime}</div></div></td>
 			</tr>
 			<tr>
 			<td>Sunset:</td>
-			<td><div class="time-div-container"><img src="/images/sunset.png" class = "icons">&nbsp;<div class="time-div">${sunsetTime}</div></div></td>
+			<td><div class="time-div-container"><img src="images/sunset.png" class = "icons">&nbsp;<div class="time-div">${sunsetTime}</div></div></td>
 			</tr>
 			</table>`;
 
@@ -173,32 +173,32 @@ window.addEventListener("load", function () {
 
 			if (temp >= 0 && temp <= 10) {
 				document.body.style.backgroundColor = "#010038";
-				weatherImg.src = "/images/freezing.png";
+				weatherImg.src = "images/freezing.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 10 && temp <= 20) {
 				document.body.style.backgroundColor = "darkblue";
-				weatherImg.src = "/images/cold.png";
+				weatherImg.src = "images/cold.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 20 && temp <= 30) {
 				document.body.style.backgroundColor = "green";
-				weatherImg.src = "/images/temperature.png";
+				weatherImg.src = "images/temperature.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 30 && temp <= 35) {
 				document.body.style.backgroundColor = "gold";
-				weatherImg.src = "/images/sunny.png";
+				weatherImg.src = "images/sunny.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 35 && temp <= 40) {
 				document.body.style.backgroundColor = "orange";
-				weatherImg.src = "/images/hot.png";
+				weatherImg.src = "images/hot.png";
 				document.body.style.transition = "1s";
 			}
 			else if (temp > 40) {
 				document.body.style.backgroundColor = "red";
-				weatherImg.src = "/images/hot1.png";
+				weatherImg.src = "images/hot1.png";
 				document.body.style.transition = "1s";
 			}
 
@@ -206,35 +206,35 @@ window.addEventListener("load", function () {
 				`<table id="weather-details-table">
 			 <tr>
 			    <td>Weather:</td>
-			    <td><div class="time-div-container-one"><img src="/images/cloudy.png" class = "icons">&nbsp;<div class="time-div">${data["weather"][0]["main"]}</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/cloudy.png" class = "icons">&nbsp;<div class="time-div">${data["weather"][0]["main"]}</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Humidty:</td>
-			    <td><div class="time-div-container-one"><img src="/images/humidity.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["humidity"]}%</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/humidity.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["humidity"]}%</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Visibility:</td>
-			    <td><div class="time-div-container-one"><img src="/images/visibility.png" class = "icons">&nbsp;<div class="time-div">${data["visibility"]}m</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/visibility.png" class = "icons">&nbsp;<div class="time-div">${data["visibility"]}m</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Pressure:</td>
-			    <td><div class="time-div-container-one"><img src="/images/barometer.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["pressure"]}hPa</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/barometer.png" class = "icons">&nbsp;<div class="time-div">${data["main"]["pressure"]}hPa</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Max):</td>
-			    <td><div class="time-div-container-one"><img src="/images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_max"] - kelvin)}°C</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_max"] - kelvin)}°C</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Temperature (Min):</td>
-			    <td><div class="time-div-container-one"><img src="/images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_min"] - kelvin)}°C</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/thermometer.png" class = "icons">&nbsp;<div class="time-div">${Math.floor(data["main"]["temp_min"] - kelvin)}°C</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Wind Speed:</td>
-			    <td><div class="time-div-container-one"><img src="/images/wind.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["speed"]}m/s</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/wind.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["speed"]}m/s</div></div></td>
 			 </tr>
 			 <tr>
 			    <td>Wind Degree:</td>
-			    <td><div class="time-div-container-one"><img src="/images/navigation.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["deg"]}°</div></div></td>
+			    <td><div class="time-div-container-one"><img src="images/navigation.png" class = "icons">&nbsp;<div class="time-div">${data["wind"]["deg"]}°</div></div></td>
 			 </tr>
 			</table>`;
 
@@ -253,23 +253,23 @@ window.addEventListener("load", function () {
 			<table id="city-details-table">
 			<tr>
 			<td>Latitude:</td>
-			<td><div class="time-div-container"><img src="/images/latitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lat"]}°</div></div></td>
+			<td><div class="time-div-container"><img src="images/latitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lat"]}°</div></div></td>
 			</tr>
 			<tr>
 			<td>Longitude:</td>
-			<td><div class="time-div-container"><img src="/images/longitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lon"]}°</div></div></td>
+			<td><div class="time-div-container"><img src="images/longitude.png" class = "icons">&nbsp;<div class="time-div">${data["coord"]["lon"]}°</div></div></td>
 			</tr>
 			<tr>
 			<td>Time Zone:</td>
-			<td><div class="time-div-container"><img src="/images/time-zone.png" class = "icons">&nbsp;<div class="time-div">${time}</div></div></td>
+			<td><div class="time-div-container"><img src="images/time-zone.png" class = "icons">&nbsp;<div class="time-div">${time}</div></div></td>
 			</tr>
 			<tr>
 			<td>Sunrise:</td>
-			<td><div class="time-div-container"><img src="/images/sunrise.png" class = "icons">&nbsp;<div class="time-div">${sunriseTime}</div></div></td>
+			<td><div class="time-div-container"><img src="images/sunrise.png" class = "icons">&nbsp;<div class="time-div">${sunriseTime}</div></div></td>
 			</tr>
 			<tr>
 			<td>Sunset:</td>
-			<td><div class="time-div-container"><img src="/images/sunset.png" class = "icons">&nbsp;<div class="time-div">${sunsetTime}</div></div></td>
+			<td><div class="time-div-container"><img src="images/sunset.png" class = "icons">&nbsp;<div class="time-div">${sunsetTime}</div></div></td>
 			</tr>
 			</table>`;
 
