@@ -1,3 +1,6 @@
+require('dotenv').config();
+console.log(process.env);
+
 let container = document.getElementById("container");
 let inputBox = document.getElementById("input-box");
 let searchBtn = document.getElementById("search-button");
