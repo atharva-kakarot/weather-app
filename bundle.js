@@ -29477,7 +29477,6 @@ exports.createContext = Script.createContext = function (context) {
 },{}],174:[function(require,module,exports){
 (function (process){(function (){
 require('dotenv').config();
-console.log(process.env);
 
 let container = document.getElementById("container");
 let inputBox = document.getElementById("input-box");
@@ -29643,7 +29642,6 @@ window.addEventListener("load", function () {
 			}
 		})
 		.then(data => {
-			console.log(data);
 			container.style.display = "flex";
 			container.style.flexDirection = "row";
 
